@@ -1,7 +1,7 @@
 :: Important stuff
 @echo off && cls
-title GoAnimate-Website
-if not exist "installed" (if not exist "notinstalled" (echo GoAnimate-Website Configuration File >> notinstalled))
+title GoAniWayBackMachine
+if not exist "installed" (if not exist "notinstalled" (echo GoAniWayBackMachine Configuration File >> notinstalled))
 ::::::::::::::::::::
 :: Initialization ::
 ::::::::::::::::::::
@@ -11,12 +11,12 @@ TASKKILL /IM node.exe /F 2>nul
 cls
 
 :::::::::::::::::::::::::::::
-:: Start GoAnimate-Website ::
+:: Start GoAniWayBackMachine ::
 :::::::::::::::::::::::::::::
 
 :: Check for installation
 if exist notinstalled (
-	echo GoAnimate-Website is not installed! Installing...
+	echo GoAniWayBackMachine is not installed! Installing...
 	call npm install
 	ren "notinstalled" "installed"
 	cls
